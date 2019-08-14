@@ -1,1 +1,357 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 10px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+nav a:hover {
+  color: blue;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    border-bottom: 1px solid lightgrey;
+  }
+}
+.top-content {
+  width: 100%;
+  margin: 10px;
+  padding: 30px 20px;
+  background-color: lightgray;
+}
+.top-content .top {
+  border-bottom: 1px solid black;
+  height: 60%;
+}
+.top-content .top img {
+  width: 40%;
+  margin: 3% 2%;
+}
+@media (max-width: 500px) {
+  .top-content .top img {
+    width: 90%;
+    margin: 5%;
+  }
+}
+.top-content .top h1 {
+  font-size: 3em;
+  padding: 1%;
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .top-content .top h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+.top-content .top p {
+  font-size: 1.2em;
+  padding: 1%;
+  margin-left: 1%;
+}
+@media (max-width: 500px) {
+  .top-content .top p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+.top-content .bottom {
+  margin: 1%;
+  padding: 1%;
+}
+.top-content .bottom p {
+  font-size: 1em;
+}
+@media (max-width: 500px) {
+  .top-content .bottom p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+.top-content .bottom a {
+  display: block;
+  text-decoration: none;
+  width: 25%;
+  padding: 2%;
+  background-color: grey;
+  margin: 2% 0 0;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 500px) {
+  .top-content .bottom a {
+    width: 80%;
+    margin: 5% 10%;
+  }
+}
+.mid-content {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .mid-content {
+    flex-direction: column;
+  }
+}
+.mid-content .left {
+  width: 50%;
+  padding: 10px;
+}
+.mid-content .left h3 {
+  font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  .mid-content .left h3 {
+    text-align: center;
+  }
+}
+.mid-content .left p {
+  margin: 10px auto;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+@media (max-width: 500px) {
+  .mid-content .left p {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content .left {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+  }
+}
+.mid-content .right {
+  width: 50%;
+  padding: 10px;
+}
+.mid-content .right h3 {
+  font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  .mid-content .right h3 {
+    text-align: center;
+  }
+}
+.mid-content .right ul {
+  margin: 10px auto;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.mid-content .right ul li {
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .mid-content .right ul li {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content .right {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px;
+  }
+}
+.bottom-content {
+  margin: 10px;
+  width: 100%;
+}
+.bottom-content h3 {
+  font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  .bottom-content h3 {
+    text-align: center;
+  }
+}
+.bottom-content table {
+  margin: 10px auto;
+  padding: 1%;
+  width: 100%;
+  height: 80%;
+  text-align: left;
+}
+.bottom-content table thead tr {
+  border-top: 1px solid lightgrey;
+}
+.bottom-content table thead tr th {
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media (max-width: 500px) {
+  .bottom-content table thead tr th {
+    text-align: center;
+  }
+}
+.bottom-content table tbody tr td {
+  height: 40px;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .bottom-content table tbody tr td {
+    text-align: center;
+  }
+}
+.bottom-content table tbody tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+footer {
+  margin: 10px;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  height: 50px;
+}
+footer p {
+  padding: 2%;
+  text-align: center;
+  font-size: 0.8em;
+}
